@@ -1,4 +1,4 @@
-public class ElementoMultimediale {
+public abstract class ElementoMultimediale {
     protected String titolo;
 
     public ElementoMultimediale(String titolo) {
@@ -8,4 +8,6 @@ public class ElementoMultimediale {
     public String getTitolo() {
         return titolo;
     }
+
+    public abstract void esegui();
 }

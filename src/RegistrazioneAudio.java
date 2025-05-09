@@ -1,6 +1,6 @@
 public class RegistrazioneAudio extends ElementoMultimediale implements Riproducibile {
-    private int durata; // in secondi
-    private int volume; // livello del volume
+    private int durata;
+    private int volume;
 
     public RegistrazioneAudio(String titolo, int durata, int volume) {
         super(titolo);
@@ -26,5 +26,10 @@ public class RegistrazioneAudio extends ElementoMultimediale implements Riproduc
         for (int i = 0; i < durata; i++) {
             System.out.println(titolo + " " + "!".repeat(volume));
         }
+    }
+
+    @Override
+    public void esegui() {
+        play();
     }
 }
