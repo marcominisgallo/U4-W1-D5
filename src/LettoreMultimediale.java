@@ -5,7 +5,7 @@ public class LettoreMultimediale {
         Scanner scanner = new Scanner(System.in);
         ElementoMultimediale[] elementi = new ElementoMultimediale[5];
 
-        // Creazione degli elementi multimediali
+        // Creazione dei 5 elementi.
         for (int i = 0; i < 5; i++) {
             boolean inputValido = false;
             while (!inputValido) {
@@ -42,7 +42,7 @@ public class LettoreMultimediale {
             }
         }
 
-        // Esecuzione degli elementi
+        // Esecuzione
         while (true) {
             System.out.println("Inserisci un numero da 1 a 5 per eseguire un elemento, oppure 0 per uscire:");
             int scelta = scanner.nextInt();
